@@ -4,7 +4,7 @@ module.exports = async function (context, req) {
   let email = req.body.email;
 
   client.setConfig({
-    apiKey: process.env.MAILCHIMP_API_KEY || "890af1b395aa3a0bdad986741446da2b",
+    apiKey: process.env.MAILCHIMP_API_KEY,
     server: "us7",
   });
 
